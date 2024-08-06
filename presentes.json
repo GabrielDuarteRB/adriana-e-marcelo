@@ -1,0 +1,39 @@
+[
+    {
+      "image": "https://via.placeholder.com/150",
+      "title": "Gift 1",
+      "description": "Description of Gift 1",
+      "price": 50.00
+    },
+    {
+      "image": "https://via.placeholder.com/150",
+      "title": "Gift 2",
+      "description": "Description of Gift 2",
+      "price": 50.00
+    },
+    {
+      "image": "https://via.placeholder.com/150",
+      "title": "Gift 3",
+      "description": "Description of Gift 3",
+      "price": 50.00
+    },
+    {
+      "image": "https://via.placeholder.com/150",
+      "title": "Gift 1",
+      "description": "Description of Gift 1",
+      "price": 50.00
+    },
+    {
+      "image": "https://via.placeholder.com/150",
+      "title": "Gift 2",
+      "description": "Description of Gift 2",
+      "price": 50.00
+    },
+    {
+      "image": "https://via.placeholder.com/150",
+      "title": "Gift 3",
+      "description": "Description of Gift 3",
+      "price": 50.00
+    }
+  ]
+  

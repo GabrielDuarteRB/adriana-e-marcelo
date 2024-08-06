@@ -1,0 +1,30 @@
+[
+    {
+      "inverted": false,
+      "image": "https://picsum.photos/300/300",
+      "heading": "Primeira vez que nos vimos",
+      "date": "1 September 2020",
+      "body": "Estava rolando um racha bem doido "
+    },
+    {
+      "inverted": true,
+      "image": "https://picsum.photos/300/301",
+      "heading": "Casamento",
+      "date": "1 September 2020",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis tempora animi totam illum ratione?"
+    },
+    {
+      "inverted": false,
+      "image": "https://picsum.photos/300/301",
+      "heading": "Nascimento da Lulu",
+      "date": "1 September 2020",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis tempora animi totam illum ratione?"
+    },
+    {
+      "inverted": true,
+      "image": "https://picsum.photos/300/301",
+      "heading": "Nathalya começou a namorar o garoto mais bonito do universo",
+      "date": "5 de Março",
+      "body": "Gabriel é muito bonito, maravilhoso, gala de novela e ainda super inteligente"
+    }
+  ]
