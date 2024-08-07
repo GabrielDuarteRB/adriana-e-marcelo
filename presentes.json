@@ -1,39 +1,74 @@
 [
-    {
-      "image": "https://via.placeholder.com/150",
-      "title": "Gift 1",
-      "description": "Description of Gift 1",
-      "price": 50.00
-    },
-    {
-      "image": "https://via.placeholder.com/150",
-      "title": "Gift 2",
-      "description": "Description of Gift 2",
-      "price": 50.00
-    },
-    {
-      "image": "https://via.placeholder.com/150",
-      "title": "Gift 3",
-      "description": "Description of Gift 3",
-      "price": 50.00
-    },
-    {
-      "image": "https://via.placeholder.com/150",
-      "title": "Gift 1",
-      "description": "Description of Gift 1",
-      "price": 50.00
-    },
-    {
-      "image": "https://via.placeholder.com/150",
-      "title": "Gift 2",
-      "description": "Description of Gift 2",
-      "price": 50.00
-    },
-    {
-      "image": "https://via.placeholder.com/150",
-      "title": "Gift 3",
-      "description": "Description of Gift 3",
-      "price": 50.00
-    }
-  ]
-  
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Jogo de Toalhas",
+    "description": "Conjunto de toalhas de banho e rosto com alta absorção e maciez.",
+    "price": 100.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "12345678901 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Aparelho de Jantar",
+    "description": "Conjunto de 20 peças para servir um jantar elegante.",
+    "price": 250.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "23456789012 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Conjunto de Panelas",
+    "description": "Panelas antiaderentes de diversos tamanhos para facilitar o dia a dia na cozinha.",
+    "price": 300.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "34567890123 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Liquidificador",
+    "description": "Liquidificador com alta potência e diversas velocidades.",
+    "price": 150.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "45678901234 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Jogo de Facas",
+    "description": "Facas de alta precisão para cortar carnes, legumes e outros alimentos.",
+    "price": 80.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "56789012345 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Cafeteira Elétrica",
+    "description": "Cafeteira para preparar cafés especiais e deliciosos.",
+    "price": 200.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "67890123456 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Kit de Utensílios de Cozinha",
+    "description": "Conjunto completo de utensílios para facilitar o preparo das refeições.",
+    "price": 120.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "78901234567 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Máquina de Waffles",
+    "description": "Prepare waffles deliciosos e crocantes em poucos minutos.",
+    "price": 180.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "89012345678 Codigo ficara aqui"
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "title": "Aspirador de Pó",
+    "description": "Aspirador de pó potente para uma limpeza eficiente da casa.",
+    "price": 350.00,
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "90123456789 Codigo ficara aqui"
+  }
+]

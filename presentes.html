@@ -29,7 +29,6 @@
           <ul class="navbar-nav-custom" id="navbarNav">
               <li><a class="nav-link-custom" href="/">Home</a></li>
               <li><a class="nav-link-custom" href="presentes.html">Presentes</a></li>
-              <li><a class="nav-link-custom" href="carrinho.html">Carrinho</a></li>
           </ul>
       </div>
     </nav>
@@ -41,7 +40,6 @@
             <ul class="offcanvas-nav-custom">
               <li><a class="nav-link-custom" href="/">Home</a></li>
               <li><a class="nav-link-custom" href="presentes.html">Presentes</a></li>
-              <li><a class="nav-link-custom" href="carrinho.html">Carrinho</a></li>
             </ul>
         </div>
     </div>
@@ -53,6 +51,27 @@
             <!-- Cards de presentes serão adicionados aqui via JS -->
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal modal-lg fade" id="modalPresente" tabindex="-1" aria-labelledby="modalPresente" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fw-bold" id="tituloModalPresente"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="descricaoModalPresente" class="fs-5"></p>
+            <div id="qrcodeModal" class="d-flex justify-content-center"></div>
+            <p id="codigoQrCodeModal" class="text-center"></p>
+            <h4 id="precoModalPresente"></h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <footer class="mt-4">
