@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
     const pixInfo = document.getElementById('pix-info');
+    const qrcodeContainer = document.getElementById('qrcode');
     const addMoreItemsButton = document.getElementById('add-more-items');
     const continuePurchaseButton = document.getElementById('continue-purchase');
 
@@ -38,8 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adiciona funcionalidade para o botão "Continua compra"
     continuePurchaseButton.addEventListener('click', () => {
-        pixInfo.style.display = pixInfo.style.display === 'none' ? 'block' : 'none'; // Alterna a exibição do QR Code e chave PIX
-    });
+      if (pixInfo.style.display === 'none') {
+          pixInfo.style.display = 'block';
+      } else {
+          pixInfo.style.display = 'none';
+      }
+  });
 
     function removeFromCart(event) {
       const title = event.target.getAttribute('data-title');
