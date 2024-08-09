@@ -1,47 +1,114 @@
-function criandoNossaHistoria() {
-    fetch('../nossa-historia.json')
-    .then(response => response.json())
-    .then(data => {
-      const timeline = document.getElementById('timeline');
+function confirmarPresenca(e) {
+  let nameCounter = 1; 
+  const form = document.getElementById('rsvpForm');
+  const submitForm = document.getElementById('submitForm');
+  const abrirModal = document.getElementById('abrirModal');
+  const textoNomes = document.getElementById('textoNomes');
+  const enviadoComSucessoModal = new bootstrap.Modal(document.getElementById('enviadoComSucesso'));
 
-      data.forEach(item => {
-        const li = document.createElement('li');
-        if (item.inverted) {
-          li.classList.add('timeline-inverted');
+    document.getElementById('addNameBtn').addEventListener('click', function() {
+        nameCounter++;
+        const inputContainer = document.getElementById('inputContainer');
+        
+        
+        const newInputGroup = document.createElement('div');
+        newInputGroup.classList.add('input-group');
+        newInputGroup.classList.add('mb-3');
+        newInputGroup.classList.add('align-items-center');
+
+      
+        const newLabel = document.createElement('span');
+        newLabel.setAttribute('class', 'input-group-text');
+        newLabel.textContent = 'Nome:';
+
+        newInputGroup.innerHTML = `
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nome:</span>
+            </div>
+            <input type="text" id="name${nameCounter}" name="names[]" class="form-control" required>
+            <span class="remove-btn pe-auto"><i class="bi bi-trash"></i></span>
+        `;
+
+        inputContainer.appendChild(newInputGroup);
+        attachRemoveEvent(newInputGroup.querySelector('.remove-btn'));
+    });
+
+    submitForm.addEventListener('click', function(event) {
+        
+      const inputs = document.querySelectorAll('input[name="names[]"]');
+      const names = [];
+
+      inputs.forEach(input => {
+        if (input.value.trim()) {
+            names.push(input.value);
         }
-
-        const timelineImage = document.createElement('div');
-        timelineImage.classList.add('timeline-image');
-        timelineImage.style.backgroundImage = `url(${item.image})`;
-
-        const timelinePanel = document.createElement('div');
-        timelinePanel.classList.add('timeline-panel');
-
-        const timelineHeading = document.createElement('div');
-        timelineHeading.classList.add('timeline-heading');
-        const h3 = document.createElement('h3');
-        h3.innerText = item.heading;
-        const span = document.createElement('span');
-        span.innerText = item.date;
-        timelineHeading.appendChild(h3);
-        timelineHeading.appendChild(span);
-
-        const timelineBody = document.createElement('div');
-        timelineBody.classList.add('timeline-body');
-        const p = document.createElement('p');
-        p.innerText = item.body;
-        timelineBody.appendChild(p);
-
-        timelinePanel.appendChild(timelineHeading);
-        timelinePanel.appendChild(timelineBody);
-
-        li.appendChild(timelineImage);
-        li.appendChild(timelinePanel);
-
-        timeline.appendChild(li);
       });
+
+      if (names.length === 0) {
+        alert('Por favor, adicione pelo menos um nome.');
+        return;
+      }
+
+      const googleFormId = '1FAIpQLSeY9UquCR8C_z5rkLWaDE52OsCSesAbcw4lmsbQPj19iHPbIQ';
+      const entryName = 'entry.399250699';
+      const url = `https://docs.google.com/forms/d/e/${googleFormId}/formResponse`;
+
+      const postData = new URLSearchParams();
+
+      names.forEach(name => {
+        postData.append(entryName, name);
+      });
+
+      fetch(url, {
+          method: 'POST',
+          body: postData.toString(), 
+          headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+          }
+      })
+      .then(response => response.text())
+
+      enviadoComSucessoModal.show();
+      limparCampos()
+      
+    });
+
+    abrirModal.addEventListener('click', () => {
+      const inputs = document.querySelectorAll('input[name="names[]"]');
+      const names = [];
+
+      inputs.forEach(input => {
+        if (input.value.trim()) {
+            names.push(input.value);
+        }
+      });
+
+      if (names.length === 0) {
+        alert('Por favor, adicione pelo menos um nome.');
+        return;
+      }
+
+      textoNomes.innerHTML = 'Voce deseja enviar que os(as) ' + names + ' vão participar da festa'
     })
-    .catch(error => console.error('Error fetching data:', error));
 }
 
-criandoNossaHistoria()
+function attachRemoveEvent(buttonRemove) {
+  buttonRemove.addEventListener('click', function() {
+      const inputGroup = this.parentElement;
+      inputGroup.remove();
+  });
+}
+
+
+function limparCampos() {
+  const inputs = document.querySelectorAll('input[name="names[]"]');
+  inputs.forEach((input, index) => {
+      if (index > 0) {
+          input.parentElement.remove()
+      } else {
+          input.value = ''
+      }
+  });
+}
+
+confirmarPresenca()
