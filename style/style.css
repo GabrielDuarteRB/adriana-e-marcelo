@@ -8,7 +8,8 @@
   --prata: #C0C0C0;
   --azul: #ADD8E6;
 
-  --roxo: #7E81AF
+  --roxo: #7E81AF;
+  --ciano: #AEC0D3;
 }
 
 /* Reset */
@@ -75,9 +76,9 @@ body {
 
 .hero .line {
   display: flex;
-  border-top: 1px solid var(--roxo);
-  margin-bottom: 24px;
-  margin-top: 24px;
+  border-top: 1px solid var(--ciano);
+  margin-bottom: 16px;
+  margin-top: 16px;
   position: relative;
   width: 150px;
 }
@@ -85,7 +86,7 @@ body {
 .hero .line::after {
   content: '';
   display: block;
-  background-color: var(--roxo);
+  background-color: var(--ciano);
   border-radius: 50%;
   height: 5px;
   right: -2px;
@@ -97,7 +98,7 @@ body {
 .hero .line::before {
   content: '';
   display: block;
-  background-color: var(--roxo);
+  background-color:var(--ciano);
   border-radius: 50%;
   height: 5px;
   left: -2px;
@@ -133,6 +134,7 @@ body {
 }
 
 .hero .de {
+  color: var(--ciano);
   font-size: 8rem !important;
   font-weight: 100;
   z-index: 99;
@@ -145,7 +147,7 @@ body {
 
 .hero .prata { 
   margin-top: -104px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   letter-spacing: 12px;
 }
 
@@ -155,9 +157,10 @@ body {
 }
 
 .hero .noivos {
+  color: var(--ciano);
   font-size: 6rem;
   font-weight: 100;
-  margin-top: 96px;
+  margin-top: 48px;
 }
 
 .hero .data{
@@ -165,7 +168,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .hero address,
@@ -185,12 +188,6 @@ body {
 .hero h2,
 .hero address {
   color: var(--roxo);
-}
-
-.hero h1,
-.hero h4,
-.hero p {
-  text-shadow: var(--shadow);
 }
 
 .hero h1 {
@@ -237,7 +234,6 @@ body {
 }
 
 .navbar-brand-custom {
-  font-family: var(--secondary-font);
   font-size: 3.2rem;
   font-weight: bold;
   text-decoration: none;
@@ -806,5 +802,11 @@ footer {
 
   .hero .prata {
     margin-top: -68px; 
+  }
+}
+
+@media (max-width: 386px) {
+  .hero .noivos {
+    font-size: 4rem;
   }
 }
