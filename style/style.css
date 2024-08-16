@@ -133,6 +133,10 @@ body {
   font-family: "Crimson Pro", serif!important;
 }
 
+.font-5 {
+  font-family: "Great Vibes", cursive!important;
+}
+
 .hero .de {
   color: var(--ciano);
   font-size: 8rem !important;
@@ -142,6 +146,7 @@ body {
 
 .hero h1 {
   margin-bottom: 0px;
+  /* font-weight: 100; */
   font-size: 7rem !important;
 }
 
@@ -175,6 +180,10 @@ body {
 .hero address,
 .hero .casa {
   font-weight: 200;
+}
+
+.hero .dia {
+  font-weight: 100;
 }
 
 .hero span,
@@ -354,8 +363,7 @@ body {
 .rspv h2,
 .gifts h2,
 .presenca h2 {
-  color: var(--prata);
-  font-family: var(--secondary-font);
+  color: var(--roxo);
   font-weight: bold;
   font-size: 5rem;
 }
@@ -461,6 +469,12 @@ body {
 
 .remove-btn {
   cursor: pointer;
+}
+
+.presenca .botao-enviar {
+  color: var(--roxo);
+  background: var(--ciano);
+  border: 1px solid var(--ciano);
 }
 
 /* Story */

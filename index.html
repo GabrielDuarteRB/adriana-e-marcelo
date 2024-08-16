@@ -17,7 +17,7 @@
     <!-- Goole Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Great+Vibes&family=Parisienne&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="./style/sacramento_work_sans.css" rel="stylesheet" />
     <!-- Countdown -->
     <link rel="stylesheet" href="./style/simplyCountdown.theme.default.css" />
@@ -27,16 +27,16 @@
   <body>
     <section id="hero" class="hero w-100 h-100 p-3 margin-auto text-center d-flex justify-content-center align-items-center text-white">
         <h1 class="font-2 bodas">BODAS</h1>
-        <h2 class="font-3 de">de</h2>
+        <h2 class="font-5 de">de</h2>
         <h1 class="font-2 prata">PRATA</h1>
         <span class="font-4 data">
           10 
           <span class="bolinha"></span> 
           05
           <span class="bolinha"></span>
-          2025
+          25
         </span>
-        <span class="font-1">SÁBADO, ÀS 19H</span>
+        <span class="font-1 dia">SÁBADO, ÀS 19H</span>
         <div class="line"></div>
         <address class="font-4">RUA FÁBIO LUZ, 140 - MÉIER</address>
         <span class="font-1 casa">CASA DE FESTAS MARC RECEPÇÕES</span>
@@ -49,7 +49,7 @@
 
     <nav class="navbar-custom">
       <div class="container-custom">
-          <a class="navbar-brand-custom font-3" href="#">Bodas</a>
+          <a class="navbar-brand-custom font-3" href="#">bodas</a>
           <button class="navbar-toggler-custom" type="button" aria-label="Toggle navigation" onclick="toggleOffcanvas()">
               <span class="navbar-toggler-icon-custom"></span>
           </button>
@@ -106,7 +106,7 @@
 
     <section id="presenca" class="presenca">
       <div class="container">
-          <h2 class="text-center font-3">Confirmação de Presença</h2>
+          <h2 class="text-center font-3">Confirmar de presença</h2>
           <p class="text-center font-4">Digite o nome das pessoas que irão comparacer ao evento</p>
           <div id="rsvpForm" class="d-flex flex-column align-items-center">
               <div id="inputContainer" class="w-50">
@@ -117,8 +117,8 @@
                       <input type="text" id="name1" name="names[]" class="form-control" required>
                   </div>
               </div>
-              <button type="button" id="addNameBtn" class="btn font-4">Adicionar mais um nome</button>
-              <button type="button" data-bs-toggle="modal" data-bs-target="#confirmaEnvio" id="abrirModal" class="btn btn-primary mt-3 w-50 font-4">Enviar</button>
+              <button type="button" id="addNameBtn" class="btn btn-secondary font-4">Adicionar mais um nome</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#confirmaEnvio" id="abrirModal" class="btn btn-primary botao-enviar mt-3 w-50 font-4">Enviar</button>
           </div>
       </div>
     </section>
