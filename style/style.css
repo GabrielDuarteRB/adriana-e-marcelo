@@ -236,6 +236,10 @@ body {
   z-index: 1000;
 }
 
+.close-navbar {
+  color: black;
+}
+
 .container-custom {
   align-items: center;
   display: flex;
