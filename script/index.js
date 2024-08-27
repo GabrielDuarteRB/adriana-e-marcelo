@@ -88,7 +88,7 @@ function confirmarPresenca(e) {
         return;
       }
 
-      textoNomes.innerHTML = 'Deseja confirmar presença de ' + names 
+      textoNomes.innerHTML = 'Deseja confirmar a presença de ' + names + '?'
     })
 }
 
