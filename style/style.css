@@ -139,7 +139,7 @@ body {
 
 .hero .de {
   color: var(--ciano);
-  font-size: 8rem !important;
+  font-size: 9rem !important;
   font-weight: 100;
   z-index: 99;
 }
@@ -664,6 +664,12 @@ footer {
   background-color: var(--azul);
   color: white;
   bottom: 0;
+}
+
+@media(max-width: 1270px) {
+  .flor {
+    width: 340px;
+  }
 }
 
 /* Media Query */

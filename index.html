@@ -70,25 +70,6 @@
           </ul>
       </div>
   </div>
-<!-- 
-    <section id="info" class="info">
-      <h2 class="text-center mb-10">Informações do evento</h2>
-      <div class="container d-flex justify-content-between">
-        <div class="row">
-          <div class="d-flex flex-column">
-            <p class="alamat">CASA DE FESTAS MARC RECEPÇÕES</p>
-            <span>Rua Fábio Luz, 140 - Méier</span>
-            <span>10.05.2025 SAB 19:00</span>
-            <a href="https://maps.app.goo.gl/xjxz3m54eVLhyjuv5" target="_blank" class="w-25">
-              <img class="img-fluid rounded w-50" src="https://cdn-icons-png.flaticon.com/512/888/888856.png" alt="icone do google maps">
-            </a>
-          </div>
-        </div>
-        <div class="text-end">
-          <img class="img-fluid w-75 rounded" src="https://www.damsfestas.com.br/wp-content/uploads/2019/11/casa-de-festas.jpg" alt="Imagem da casa de festa">
-        </div>
-      </div>
-    </section> -->
 
     <section id="gifts" class="gifts">
       <div class="container">
@@ -127,7 +108,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Deseja enviar confirmar presença?</h5>
+            <h5 class="modal-title">Confirmar presença</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -142,17 +123,20 @@
     </div>
 
     <div class="modal" id="enviadoComSucesso" tabindex="-1">
-      <div class="modal-dialog modal-sm modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p>Presença confirmada!</p>
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-body" id="modalBodyMusica">
+                  <p>Presença confirmada! Agora diga uma música que você acha que não pode faltar na festa</p>
+
+                  <input type="text" id="inputMusica" name="" class="form-control">
+                  <button type="button" id="btnMusica" class="btn btn-primary botao-enviar mt-3 w-100 font-4">Enviar</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="submitForm" data-bs-dismiss="modal" aria-label="Close">Fechar</button>
+              </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success" id="submitForm"  data-bs-dismiss="modal" aria-label="Close">Fechar</button>
-          </div>
-        </div>
       </div>
-    </div>
+  </div>
     
 
     <footer class="">

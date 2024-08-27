@@ -88,7 +88,7 @@ function confirmarPresenca(e) {
         return;
       }
 
-      textoNomes.innerHTML = 'Voce deseja enviar que os(as) ' + names + ' vão participar da festa'
+      textoNomes.innerHTML = 'Deseja confirmar presença de ' + names 
     })
 }
 
@@ -111,4 +111,34 @@ function limparCampos() {
   });
 }
 
+function enviarMusica() {
+  const btnMusica = document.getElementById('btnMusica');
+  const inputMusica = document.getElementById('inputMusica');
+  const modalBodyMusica = document.getElementById('modalBodyMusica')
+
+  btnMusica.addEventListener('click', () => {
+    console.log(inputMusica.value)
+
+    const googleFormId = '1FAIpQLSfwPXeu9KwBS63UnoPA_X3HQW62NhsUfw2xkl6-KmyswGh91A';
+    const entryName = 'entry.906798177';
+    const url = `https://docs.google.com/forms/d/e/${googleFormId}/formResponse`;
+
+      const postData = new URLSearchParams();
+      postData.append(entryName, inputMusica.value);
+
+      fetch(url, {
+          method: 'POST',
+          body: postData.toString(), 
+          headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+          }
+      })
+      .then(response => response.text())
+
+      modalBodyMusica.innerHTML = '<p>Música enviada com sucesso!</p>'
+
+  })
+}
+
+enviarMusica()
 confirmarPresenca()
