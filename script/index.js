@@ -1,6 +1,6 @@
 function confirmarPresenca(e) {
   let nameCounter = 1; 
-  const form = document.getElementById('rsvpForm');
+  const confirmaEnvio = new bootstrap.Modal(document.getElementById('confirmaEnvio'));
   const submitForm = document.getElementById('submitForm');
   const abrirModal = document.getElementById('abrirModal');
   const textoNomes = document.getElementById('textoNomes');
@@ -87,6 +87,8 @@ function confirmarPresenca(e) {
         alert('Por favor, adicione pelo menos um nome.');
         return;
       }
+
+      confirmaEnvio.show()
 
       textoNomes.innerHTML = 'Deseja confirmar a presença de ' + names + '?'
     })
