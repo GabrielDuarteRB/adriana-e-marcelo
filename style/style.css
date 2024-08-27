@@ -52,6 +52,42 @@ body {
   overflow: hidden;
 }
 
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  color: var(--roxo)!important;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  text-align: center;
+  opacity: 0.7;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+.scroll-down span {
+  margin-bottom: -8px;
+  font-size: 12px!important;
+}
+
+.scroll-down i {
+  margin-top: -5px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
 
 .flor1 {
   z-index: -5;
@@ -783,6 +819,10 @@ footer {
 
   .home .heart {
     display: none;
+  }
+
+  .scroll-down {
+    bottom: 77px;
   }
 
   #count {
