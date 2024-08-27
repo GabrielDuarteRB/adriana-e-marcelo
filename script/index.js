@@ -99,7 +99,6 @@ function attachRemoveEvent(buttonRemove) {
   });
 }
 
-
 function limparCampos() {
   const inputs = document.querySelectorAll('input[name="names[]"]');
   inputs.forEach((input, index) => {
@@ -117,8 +116,7 @@ function enviarMusica() {
   const modalBodyMusica = document.getElementById('modalBodyMusica')
 
   btnMusica.addEventListener('click', () => {
-    console.log(inputMusica.value)
-
+    console.log('teste')
     const googleFormId = '1FAIpQLSfwPXeu9KwBS63UnoPA_X3HQW62NhsUfw2xkl6-KmyswGh91A';
     const entryName = 'entry.906798177';
     const url = `https://docs.google.com/forms/d/e/${googleFormId}/formResponse`;
@@ -140,5 +138,21 @@ function enviarMusica() {
   })
 }
 
+function voltarTextoMusica() {
+  const btnMusicaFechar = document.getElementById('btnMusicaFechar')
+  const modalBodyMusica = document.getElementById('modalBodyMusica')
+
+  btnMusicaFechar.addEventListener('click', () => {
+      modalBodyMusica.innerHTML = `
+        <p>Presença confirmada! Diz aí uma música que você acha que não pode faltar na nossa festa!</p>        
+        <input type="text" id="inputMusica" name="" class="form-control">
+        <button type="button" id="btnMusica" class="btn btn-primary botao-enviar mt-3 w-100 font-4">Enviar</button>
+      `
+
+      enviarMusica()
+  })
+}
+
 enviarMusica()
 confirmarPresenca()
+voltarTextoMusica()
