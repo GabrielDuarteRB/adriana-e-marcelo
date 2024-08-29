@@ -516,6 +516,12 @@ body {
   cursor: pointer;
 }
 
+.presenca p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
 .presenca .botao-enviar {
   color: var(--roxo);
   background: var(--ciano);
