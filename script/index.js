@@ -88,9 +88,18 @@ function confirmarPresenca(e) {
         return;
       }
 
-      confirmaEnvio.show()
+      let formattedNames;
+      if (names.length === 1) {
+        formattedNames = names[0];
+      } else if (names.length === 2) {
+        formattedNames = names.join(' e ');
+      } else {
+        formattedNames = names.slice(0, -1).join(', ') + ' e ' + names[names.length - 1];
+      }
 
-      textoNomes.innerHTML = 'Deseja confirmar a presença de ' + names + '?'
+      confirmaEnvio.show();
+
+      textoNomes.innerHTML = 'Deseja confirmar a presença de ' + formattedNames + '?';
     })
 }
 
