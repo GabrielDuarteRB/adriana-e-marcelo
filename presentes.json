@@ -3,7 +3,7 @@
     "image": "https://i.pinimg.com/736x/aa/1e/fd/aa1efd3b72afc6e1adb1c05dcf374bdc.jpg",
     "title": "Bondinho",
     "description": "Passeio romântico para o casal.",
-    "price": "390,00",
+    "price": "400,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "12345678901 Codigo ficara aqui"
   },
@@ -27,7 +27,7 @@
     "image": "https://i.pinimg.com/736x/08/df/1d/08df1d370f7b79ec454f9fd4f0abd94f.jpg",
     "title": "Cobertor",
     "description": "Para a Adriana, pois ela sempre está coberta de razão.",
-    "price": "150,00",
+    "price": "200,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "45678901234 Codigo ficara aqui"
   },
@@ -35,7 +35,7 @@
     "image": "https://i.pinimg.com/236x/2b/fc/9b/2bfc9ba44de65b3ebb574978283aa0b2.jpg",
     "title": "Mantinha do aconchego",
     "description": "Para o Marcelo, pois ele é um pobre sofredor.",
-    "price": "105,00",
+    "price": "150,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "56789012345 Codigo ficara aqui"
   },
@@ -43,15 +43,15 @@
     "image": "https://i.pinimg.com/736x/3c/36/30/3c3630c99aadbb1328a752121c106a17.jpg",
     "title": "Viagem para as filhas",
     "description": "Que enchem o saco, deixarem os pais em paz.",
-    "price": "350,00",
+    "price": "1000,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "67890123456 Codigo ficara aqui"
   },
   {
     "image": "https://i.pinimg.com/736x/f8/49/4d/f8494d7a35c50f1c85685ee4fe605402.jpg",
     "title": "Restaurante",
-    "description": "Parcela de um jantar romântico.",
-    "price": "90,00",
+    "description": "Jantar romântico para o casal.",
+    "price": "550,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "78901234567 Codigo ficara aqui"
   },
@@ -59,7 +59,7 @@
     "image": "https://i.pinimg.com/736x/6d/ca/ed/6dcaedd1f9182452e7433e76c328fd4a.jpg",
     "title": "Aulas de dança de salão",
     "description": "Para o casal não passar mais vergonha.",
-    "price": "120,00",
+    "price": "450,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "89012345678 Codigo ficara aqui"
   },
@@ -67,7 +67,7 @@
     "image": "https://i.pinimg.com/736x/6c/ab/c7/6cabc71e980c331195d372a28fec5e57.jpg",
     "title": "Passeio de barco",
     "description": "Pelo Rio de Janeiro para a família.",
-    "price": "400,00",
+    "price": "850,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -75,7 +75,7 @@
     "image": "https://i.pinimg.com/236x/bb/a3/c8/bba3c86f1d2494545d5ea04a5f5219e4.jpg",
     "title": "Aula de culinária para a Adriana",
     "description": "Assim, o Marcelo poder descansar.",
-    "price": "50,00",
+    "price": "700,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -83,7 +83,7 @@
     "image": "https://i.pinimg.com/236x/3a/31/35/3a3135df403eb169c5053581bc2c4ca6.jpg",
     "title": "Vale compras no shopping",
     "description": "Para as filhas darem aquela relaxada.",
-    "price": "350,00",
+    "price": "800,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -91,15 +91,15 @@
     "image": "https://i.pinimg.com/736x/07/90/6d/07906d330c200ec1544c201c71cebdf9.jpg",
     "title": "Almoço para a Luisa",
     "description": "Porque não queremos vê-la estressada.",
-    "price": "100,00",
+    "price": "300,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
     "image": "https://i.pinimg.com/236x/f4/0c/e3/f40ce3fa537e9eed55d7693c7f54ee2d.jpg",
-    "title": "Troféu 25 anos de paciência",
-    "description": "Um prêmio merecido para quem sobreviveu ao casamento.",
-    "price": "80,00",
+    "title": "Prêmio de 25 anos de paciência",
+    "description": "Totalmente merecido para quem sobreviveu ao casamento.",
+    "price": "350,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -107,7 +107,7 @@
     "image": "https://i.pinimg.com/736x/bc/6b/f0/bc6bf057ccd1725de6cd4234236797e4.jpg",
     "title": "Uma viagem para o Marcelo... pro sofá",
     "description": "Um convite para o Marcelo aproveitar a solidão depois de algum comentário inconveniente.",
-    "price": "100,00",
+    "price": "250,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -115,7 +115,7 @@
     "image": "https://i.pinimg.com/736x/46/0f/65/460f6532a35f66368def2aaf66d69cf4.jpg",
     "title": "Certificado de sobrevivência",
     "description": "Um certificado de resistência pelos anos de casamento, assinado pelas filhas.",
-    "price": "50,00",
+    "price": "60,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -123,7 +123,7 @@
     "image": "./img/presentes/tapete.jpg",
     "title": "Tapete de porta personalizado",
     "description": "Com uma mensagem para evitar qualquer dúvida sobre a hierarquia da casa.",
-    "price": "90,00",
+    "price": "100,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -131,7 +131,7 @@
     "image": "./img/presentes/almofada.jpg",
     "title": "Almofada com desculpa padrão",
     "description": "Para o Marcelo ter sempre uma desculpa pronta ao alcance da mão.",
-    "price": "100,00",
+    "price": "120,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -139,7 +139,7 @@
     "image": "https://i.pinimg.com/236x/bd/bb/da/bdbbdaa770e4fd96b556d78051719545.jpg",
     "title": "Placa decorativa de silêncio é sabedoria",
     "description": "Marcelo aprendeu que às vezes é melhor ficar quieto... e viver mais.",
-    "price": "70,00",
+    "price": "80,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -147,7 +147,7 @@
     "image": "./img/presentes/sabedoria.jpg",
     "title": "Caneca da sabedoria com convicção",
     "description": "Se tiver dúvidas, consulte o Marcelo, ele sempre sabe de tudo.",
-    "price": "120,00",
+    "price": "80,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -155,7 +155,7 @@
     "image": "https://i.pinimg.com/736x/4e/1f/d8/4e1fd874339ad8639e64c591ee319c94.jpg",
     "title": "Visita ao Cristo Redentor",
     "description": "Passeio turistando pelo Rio de Janeiro.",
-    "price": "350,00",
+    "price": "650,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   },
@@ -163,7 +163,7 @@
     "image": "https://i.pinimg.com/736x/9f/18/3d/9f183dcde4305cf29176dac0eea3d2e1.jpg",
     "title": "Álbum de fotos das Bodas",
     "description": "Álbum de fotos para eternizar as memórias desse dia.",
-    "price": "900,00",
+    "price": "750,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "90123456789 Codigo ficara aqui"
   }
