@@ -544,7 +544,8 @@ body {
   border: 1px solid var(--ciano);
 }
 
-#confirmaEnvio .btn-close {
+#confirmaEnvio .btn-close,
+.modal-content .btn-close {
   right: 4px;
   position: absolute;
   top: 4px;
