@@ -874,6 +874,19 @@ footer {
   .hero .prata {
     margin-top: -75px; 
   }
+
+  .select-quantity {
+    height: auto;
+  }
+
+  #inputContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #inputContainer .col {
+    width: 100%; 
+  }
 }
 
 @media (max-width: 767px) {
