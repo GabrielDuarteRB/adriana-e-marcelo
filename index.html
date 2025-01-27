@@ -95,18 +95,62 @@
     <section id="presenca" class="presenca">
       <div class="container">
           <h2 class="text-center font-3">Confirmar presença</h2>
-          <p class="text-center font-4 roxo">Digite o nome completo das pessoas que irão comparecer ao evento</p>
           <div id="rsvpForm" class="d-flex flex-column align-items-center">
-              <div id="inputContainer" class="w-50">
-                  <div class="input-group mb-3 align-items-center">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text">Nome:</span>
-                      </div>
-                      <input type="text" id="name1" name="names[]" class="form-control" required>
+            <div id="inputContainer" class="row g-3 w-50">
+              <div class="col">
+                <div id="adultSection" class="pb-3 d-flex flex-column h-100">
+                  <label for="quantity-adult" class="form-label roxo">Quantidade de adultos:</label>
+                  <select class="form-control" id="quantity-adult">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    
+                  </select>
+                  <!-- <input type="number" class="form-control" id="quantity-adult"  placeholder="Escolha um número" min="1"> -->
+
+                  <span id="qntd-adult" class="roxo">Digite o nome completo:</span>
+                  <div id="adultSectionNames">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" name="adult[]" placeholder="Nome:">
+                    </div>
                   </div>
+                </div>
               </div>
-              <button type="button" id="addNameBtn" class="btn btn-secondary font-4">+ Adicionar mais um nome</button>
-              <button type="button" id="abrirModal" class="btn btn-primary botao-enviar mt-3 w-50 font-4">Enviar</button>
+              <div class="col">
+                <div id="kidsSection" class="pb-3 d-flex flex-column h-100">
+                  <label for="quantity-kids" class="form-label roxo">Quantidade de crianças (até dez anos):</label>
+                  <!-- <input type="number" class="form-control" id="quantity-kids" placeholder="Escolha um número" min="0"> -->
+
+                  <select class="form-control" id="quantity-kids" value="0">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    
+                  </select>
+
+                  <span id="qntd-kid" class="roxo d-none">Digite o nome completo:</span>
+                  <div id="KidSectionNames">
+
+                  </div>
+                </div>
+              </div>
+            </div>      
+            <button type="button" id="abrirModal" class="btn btn-primary botao-enviar mt-3 w-50 font-4">Enviar</button>
           </div>
       </div>
     </section>

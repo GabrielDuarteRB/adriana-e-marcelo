@@ -1,107 +1,191 @@
+const confirmaEnvio = new bootstrap.Modal(document.getElementById('confirmaEnvio'));
+const submitForm = document.getElementById('submitForm');
+const abrirModal = document.getElementById('abrirModal');
+const textoNomes = document.getElementById('textoNomes');
+const enviadoComSucessoModal = new bootstrap.Modal(document.getElementById('enviadoComSucesso'));
+
 function confirmarPresenca(e) {
-  let nameCounter = 1; 
-  const confirmaEnvio = new bootstrap.Modal(document.getElementById('confirmaEnvio'));
-  const submitForm = document.getElementById('submitForm');
-  const abrirModal = document.getElementById('abrirModal');
-  const textoNomes = document.getElementById('textoNomes');
-  const enviadoComSucessoModal = new bootstrap.Modal(document.getElementById('enviadoComSucesso'));
+  const quantityAdultInput = document.getElementById("quantity-adult");
+  const quantityKidsInput = document.getElementById("quantity-kids");
+  const adultSection = document.getElementById("adultSectionNames");
+  const kidsSection = document.getElementById("KidSectionNames");
+  const qntdKid = document.getElementById("qntd-kid");
 
-    document.getElementById('addNameBtn').addEventListener('click', function() {
-        nameCounter++;
-        const inputContainer = document.getElementById('inputContainer');
-        
-        
-        const newInputGroup = document.createElement('div');
-        newInputGroup.classList.add('input-group');
-        newInputGroup.classList.add('mb-3');
-        newInputGroup.classList.add('align-items-center');
+  function updateNameInputs() {
+    const numAdults = parseInt(quantityAdultInput.value) || 1;
+    const numKids = parseInt(quantityKidsInput.value) || 0; 
 
-      
-        const newLabel = document.createElement('span');
-        newLabel.setAttribute('class', 'input-group-text');
-        newLabel.textContent = 'Nome:';
+    console.log(quantityAdultInput.value)
 
-        newInputGroup.innerHTML = `
-            <div class="input-group-prepend">
-                <span class="input-group-text">Nome:</span>
-            </div>
-            <input type="text" id="name${nameCounter}" name="names[]" class="form-control" required>
-            <span class="remove-btn pe-auto"><i class="bi bi-trash"></i></span>
-        `;
+    const AdultsNames = adultSection.querySelectorAll(`input[name="adult[]"]`).length
+    const KidsNames = kidsSection.querySelectorAll(`input[name="kid[]"]`).length
+   
+    
+    if(numAdults < AdultsNames) {
+      clearInputs(adultSection, numAdults, 'adult');
+    } else {
+      let num = numAdults - AdultsNames
 
-        inputContainer.appendChild(newInputGroup);
-        attachRemoveEvent(newInputGroup.querySelector('.remove-btn'));
+      for(let i = 0; i < num; i++) {
+        const adultInput = createNameInput('adult');
+        adultSection.appendChild(adultInput);
+      }
+    }
+
+    if(numKids < KidsNames) {
+      clearInputs(kidsSection, numKids, 'kid');
+
+      if(numKids == 0) {
+        qntdKid.classList.add('d-none');
+      }
+    } else {
+      let num = numKids - KidsNames
+      if(numKids > 0) {
+        qntdKid.classList.remove('d-none');
+      }
+
+      for(let i = 0; i < num; i++) {
+        const kidInput = createNameInput('kid');
+        kidsSection.appendChild(kidInput);
+      }
+    }
+    
+
+
+  }
+
+  function createNameInput(forName) {
+    const div = document.createElement("div");
+    div.className = "mb-3";
+
+    const input = document.createElement("input");
+    input.type = "text";
+    input.className = "form-control";
+    input.name = `${forName}[]`;
+    input.placeholder = `Nome:`;
+
+    div.appendChild(input);
+
+    return div;
+  }
+
+  function clearInputs(section, numItems, type) {
+    let divs = section.querySelectorAll('.mb-3');
+    const cut =  Array.from(divs).slice(0, numItems)
+    
+    section.innerHTML = '';
+    cut.forEach(item => {
+      section.appendChild(item);
     });
+  }
 
-    submitForm.addEventListener('click', function(event) {
-        
-      const inputs = document.querySelectorAll('input[name="names[]"]');
-      const names = [];
-
-      inputs.forEach(input => {
-        if (input.value.trim()) {
-            names.push(input.value);
-        }
-      });
-
-      if (names.length === 0) {
-        alert('Por favor, adicione pelo menos um nome.');
-        return;
-      }
-
-      const googleFormId = '1FAIpQLSeY9UquCR8C_z5rkLWaDE52OsCSesAbcw4lmsbQPj19iHPbIQ';
-      const entryName = 'entry.399250699';
-      const url = `https://docs.google.com/forms/d/e/${googleFormId}/formResponse`;
-
-      const postData = new URLSearchParams();
-
-      names.forEach(name => {
-        postData.append(entryName, name);
-      });
-
-      fetch(url, {
-          method: 'POST',
-          body: postData.toString(), 
-          headers: {
-              'Content-Type': 'application/x-www-form-urlencoded',
-          }
-      })
-      .then(response => response.text())
-
-      enviadoComSucessoModal.show();
-      limparCampos()
-      
-    });
-
-    abrirModal.addEventListener('click', () => {
-      const inputs = document.querySelectorAll('input[name="names[]"]');
-      const names = [];
-
-      inputs.forEach(input => {
-        if (input.value.trim()) {
-            names.push(input.value);
-        }
-      });
-
-      if (names.length === 0) {
-        alert('Por favor, adicione pelo menos um nome.');
-        return;
-      }
-
-      let formattedNames;
-      if (names.length === 1) {
-        formattedNames = names[0];
-      } else if (names.length === 2) {
-        formattedNames = names.join(' e ');
-      } else {
-        formattedNames = names.slice(0, -1).join(', ') + ' e ' + names[names.length - 1];
-      }
-
-      confirmaEnvio.show();
-
-      textoNomes.innerHTML = 'Deseja confirmar a presença de ' + formattedNames + '?';
-    })
+  quantityAdultInput.addEventListener("input", updateNameInputs);
+  quantityKidsInput.addEventListener("input", updateNameInputs);
 }
+
+
+function enviarForm() {
+  submitForm.addEventListener('click', function(event) {
+        
+    const inputsAdults = document.querySelectorAll('input[name="adult[]"]');
+    const inputsKids = document.querySelectorAll('input[name="kid[]"]')
+    const adults = [];
+    const kids = [];
+    
+    inputsAdults.forEach(input => {
+      if (input.value.trim()) {
+        adults.push(input.value);
+      }
+    });
+      
+  
+    inputsKids.forEach(input => {
+        if (input.value.trim()) {
+            kids.push(input.value);
+        }
+    });
+
+    if (adults.length === 0 && kids.length === 0) {
+        alert('Por favor, adicione pelo menos um nome.');
+        return;
+    }
+  
+    const googleFormId = '1FAIpQLSeY9UquCR8C_z5rkLWaDE52OsCSesAbcw4lmsbQPj19iHPbIQ';
+    const entryName = 'entry.399250699';
+    const url = `https://docs.google.com/forms/d/e/${googleFormId}/formResponse`;
+  
+    const postData = new URLSearchParams();
+  
+    names.forEach(name => {
+      postData.append(entryName, name);
+    });
+  
+    fetch(url, {
+        method: 'POST',
+        body: postData.toString(), 
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        }
+    })
+    .then(response => response.text())
+  
+    enviadoComSucessoModal.show();
+    limparCampos()
+    
+  });
+}
+
+function abrirModalFunction() {
+  abrirModal.addEventListener('click', () => {
+    const adultInputs = document.querySelectorAll('input[name="adult[]"]');
+    const kidInputs = document.querySelectorAll('input[name="kid[]"]');
+    let blocked = false
+    
+    const names = [];
+  
+    adultInputs.forEach(input => {
+      if (input.value.trim()) {
+          names.push(input.value);
+      } else if (!blocked) {
+        blocked = true
+        alert('Por favor, preencha todos os campos!');
+        return;
+      }
+    });
+
+    kidInputs.forEach(input => {
+      if (input.value.trim()) {
+          names.push(input.value);
+      } else if (!blocked) {
+        blocked = true
+        alert('Por favor, preencha todos os campos!');
+        return;
+      }
+    });
+
+    if(blocked) return
+  
+    if (names.length === 0) {
+      alert('Por favor, adicione pelo menos um nome!');
+      return;
+    }
+  
+    let formattedNames;
+    if (names.length === 1) {
+      formattedNames = names[0];
+    } else if (names.length === 2) {
+      formattedNames = names.join(' e ');
+    } else {
+      formattedNames = names.slice(0, -1).join(', ') + ' e ' + names[names.length - 1];
+    }
+  
+    confirmaEnvio.show();
+  
+    // Altera o conteúdo do modal com os nomes formatados
+    textoNomes.innerHTML = 'Deseja confirmar a presença de ' + formattedNames + '?';
+  });
+}
+
 
 function attachRemoveEvent(buttonRemove) {
   buttonRemove.addEventListener('click', function() {
@@ -177,3 +261,4 @@ rolarTela()
 enviarMusica()
 confirmarPresenca()
 voltarTextoMusica()
+abrirModalFunction()
