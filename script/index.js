@@ -3,19 +3,18 @@ const submitForm = document.getElementById('submitForm');
 const abrirModal = document.getElementById('abrirModal');
 const textoNomes = document.getElementById('textoNomes');
 const enviadoComSucessoModal = new bootstrap.Modal(document.getElementById('enviadoComSucesso'));
+const adultSection = document.getElementById("adultSectionNames");
+const kidsSection = document.getElementById("KidSectionNames");
+const qntdKid = document.getElementById("qntd-kid");
+const qntdAdult = document.getElementById("qntd-adult");
 
 function confirmarPresenca(e) {
   const quantityAdultInput = document.getElementById("quantity-adult");
   const quantityKidsInput = document.getElementById("quantity-kids");
-  const adultSection = document.getElementById("adultSectionNames");
-  const kidsSection = document.getElementById("KidSectionNames");
-  const qntdKid = document.getElementById("qntd-kid");
 
   function updateNameInputs() {
-    const numAdults = parseInt(quantityAdultInput.value) || 1;
+    const numAdults = parseInt(quantityAdultInput.value) || 0;
     const numKids = parseInt(quantityKidsInput.value) || 0; 
-
-    console.log(quantityAdultInput.value)
 
     const AdultsNames = adultSection.querySelectorAll(`input[name="adult[]"]`).length
     const KidsNames = kidsSection.querySelectorAll(`input[name="kid[]"]`).length
@@ -23,8 +22,16 @@ function confirmarPresenca(e) {
     
     if(numAdults < AdultsNames) {
       clearInputs(adultSection, numAdults, 'adult');
+      console.log(numAdults)
+      if(numAdults == 0) {
+        qntdAdult.classList.add('d-none');
+      }
+
     } else {
       let num = numAdults - AdultsNames
+      if(numAdults > 0) {
+        qntdAdult.classList.remove('d-none');
+      }
 
       for(let i = 0; i < num; i++) {
         const adultInput = createNameInput('adult');
@@ -89,26 +96,25 @@ function enviarForm() {
         
     const adultInputs = document.querySelectorAll('input[name="adult[]"]');
     const kidInputs = document.querySelectorAll('input[name="kid[]"]');
-    const names = [];
-  
+    const names = '';
+
+    const postData = new URLSearchParams();
+
+    const entryAdult = 'entry.399250699';
+    const entryKid = 'entry.1875595689'
+
     adultInputs.forEach(input => {
-      names.push(input.value);
+      postData.append(entryAdult, input.value);
     });
 
     kidInputs.forEach(input => {
-      names.push(input.value);
+      postData.append(entryKid, input.value);
     });
   
     const googleFormId = '1FAIpQLSeY9UquCR8C_z5rkLWaDE52OsCSesAbcw4lmsbQPj19iHPbIQ';
-    const entryName = 'entry.399250699';
+
     const url = `https://docs.google.com/forms/d/e/${googleFormId}/formResponse`;
-  
-    const postData = new URLSearchParams();
-  
-    names.forEach(name => {
-      postData.append(entryName, name);
-    });
-  
+
     fetch(url, {
         method: 'POST',
         body: postData.toString(), 
@@ -118,8 +124,8 @@ function enviarForm() {
     })
     .then(response => response.text())
   
-    enviadoComSucessoModal.show();
     limparCampos()
+    enviadoComSucessoModal.show();
     
   });
 }
@@ -184,14 +190,11 @@ function attachRemoveEvent(buttonRemove) {
 }
 
 function limparCampos() {
-  const inputs = document.querySelectorAll('input[name="names[]"]');
-  inputs.forEach((input, index) => {
-      if (index > 0) {
-          input.parentElement.remove()
-      } else {
-          input.value = ''
-      }
-  });
+  adultSection.innerHTML = ''
+  kidsSection.innerHTML = ''
+
+  qntdKid.classList.add('d-none');
+  qntdAdult.classList.add('d-none');
 }
 
 function enviarMusica() {

@@ -540,8 +540,8 @@ body {
 
 .presenca .botao-enviar {
   color: #ffffff;
-  background: var(--roxo);
-  border: 1px solid var(--roxo);
+  background: var(--ciano);
+  border: 1px solid var(--ciano);
 }
 
 #confirmaEnvio .btn-close {
@@ -569,8 +569,7 @@ body {
 }
 
 .story span,
-.gallery span,
-.gifts span {
+.gallery span {
   display: block;
   color: #666;
   font-size: 0.9rem;
@@ -765,6 +764,13 @@ footer {
 
 #modalPresente .btn-fechar {
   background-color: var(--roxo);
+}
+
+.select-quantity {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
 }
 
 @media(max-width: 1270px) {
