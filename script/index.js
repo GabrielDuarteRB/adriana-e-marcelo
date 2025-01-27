@@ -87,28 +87,17 @@ function confirmarPresenca(e) {
 function enviarForm() {
   submitForm.addEventListener('click', function(event) {
         
-    const inputsAdults = document.querySelectorAll('input[name="adult[]"]');
-    const inputsKids = document.querySelectorAll('input[name="kid[]"]')
-    const adults = [];
-    const kids = [];
-    
-    inputsAdults.forEach(input => {
-      if (input.value.trim()) {
-        adults.push(input.value);
-      }
-    });
-      
+    const adultInputs = document.querySelectorAll('input[name="adult[]"]');
+    const kidInputs = document.querySelectorAll('input[name="kid[]"]');
+    const names = [];
   
-    inputsKids.forEach(input => {
-        if (input.value.trim()) {
-            kids.push(input.value);
-        }
+    adultInputs.forEach(input => {
+      names.push(input.value);
     });
 
-    if (adults.length === 0 && kids.length === 0) {
-        alert('Por favor, adicione pelo menos um nome.');
-        return;
-    }
+    kidInputs.forEach(input => {
+      names.push(input.value);
+    });
   
     const googleFormId = '1FAIpQLSeY9UquCR8C_z5rkLWaDE52OsCSesAbcw4lmsbQPj19iHPbIQ';
     const entryName = 'entry.399250699';
@@ -180,7 +169,7 @@ function abrirModalFunction() {
     }
   
     confirmaEnvio.show();
-  
+    
     // Altera o conteúdo do modal com os nomes formatados
     textoNomes.innerHTML = 'Deseja confirmar a presença de ' + formattedNames + '?';
   });
@@ -259,6 +248,7 @@ function rolarTela() {
 
 rolarTela()
 enviarMusica()
+enviarForm()
 confirmarPresenca()
 voltarTextoMusica()
 abrirModalFunction()
