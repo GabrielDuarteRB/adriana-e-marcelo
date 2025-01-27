@@ -16,13 +16,13 @@ function criandoCardPresente() {
 
       card.innerHTML = `
         <div class="card h-100">
-          <img src="${gift.image}" class="card-img-top" alt="${gift.title}">
+          <div class="card" style="background-image: url('${gift.image}'); background-size: cover; background-position: center; height: 200px;"></div>
           <div class="card-body d-flex flex-column justify-content-between">
-            <h4 class="card-title fw-bold">${gift.title}</h4>
-            <p class="card-text">${gift.description}</p>
+            <h4 class="card-title fw-bold font-1">${gift.title}</h4>
+            <p class="card-text font-1">${gift.description}</p>
             <div>
-              <p class="card-text"><strong>Preço: R$${gift.price.toFixed(2)}</strong></p>
-              <button type="button" data-bs-toggle="modal" data-bs-target="#modalPresente" class="btn btn-primary add-to-cart" data-gift='${JSON.stringify(gift)}'>Comprar presente</button>
+              <p class="card-text card-text-price font-1"><strong>Preço: R$${gift.price.toFixed(2)}</strong></p>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#modalPresente" class="btn btn-primary add-to-cart font-1" data-gift='${JSON.stringify(gift)}'>Comprar presente</button>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ function openModal(event) {
   tituloModal.innerHTML = gift.title;
   descricaoModal.innerHTML = gift.description;
   codigoQrCodeModal.innerHTML = gift.codigo
-  precoModalPresente.innerHTML = "Escaneie o qr code a cima ou copie e cole o codigo de barra no pix para presentear no valor de <b>R$" + gift.price.toFixed(2) + "</b>"
+  precoModalPresente.innerHTML = "Escaneie o qr code a cima ou copie e cole o código no pix para presentear no valor de <b>R$" + gift.price.toFixed(2) + "</b>"
 
  
 }

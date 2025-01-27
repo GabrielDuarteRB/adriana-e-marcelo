@@ -36,7 +36,7 @@
 
 body {
   font-size: 1.2rem;
-  font-family: var(--primary-font);
+  font-family: "Crimson Pro", serif;
   overflow-x: hidden;
   padding-right: 0px!important;
   display: grid;
@@ -737,6 +737,35 @@ footer {
   background-color: var(--ciano);
   color: white;
   bottom: 0;
+}
+
+.title-gifts {
+  color: var(--roxo);
+  font-family: "Crimson Pro", serif!important;
+  padding: 24px 0;
+}
+
+.add-to-cart {
+  background-color: var(--roxo);
+  border: var(--roxo);
+  font-size: 24px;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 28px;
+}
+
+.card-text  {
+  font-size: 23px;
+}
+
+.card-text-price {
+  font-size: 24px;
+}
+
+#modalPresente .btn-fechar {
+  background-color: var(--roxo);
 }
 
 @media(max-width: 1270px) {
