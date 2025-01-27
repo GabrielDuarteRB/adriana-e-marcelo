@@ -56,7 +56,7 @@
 
     <nav class="navbar-custom">
       <div class="container-custom">
-          <a class="navbar-brand-custom font-3" href="#">bodas</a>
+          <a class="navbar-brand-custom font-3" href="#">Bodas</a>
           <button class="navbar-toggler-custom" type="button" aria-label="Toggle navigation" onclick="toggleOffcanvas()">
               <span class="navbar-toggler-icon-custom"></span>
           </button>
@@ -72,8 +72,8 @@
       </div>
       <div class="offcanvas-body-custom">
           <ul class="offcanvas-nav-custom">
-            <li><a class="nav-link-custom" href="/">Home</a></li>
-            <li><a class="nav-link-custom" href="presentes.html">Presentes</a></li>
+            <li><a class="nav-link-custom roxo" href="/">Home</a></li>
+            <li><a class="nav-link-custom roxo" href="presentes.html">Presentes</a></li>
           </ul>
       </div>
   </div>
@@ -83,7 +83,7 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2 class="font-3">Enviar presentes</h2>
-            <span class="font-4">Expressões de amor</span>
+            <span class="font-4 roxo">Expressões de amor</span>
           </div>
         </div>
         <div class="row justify-content-center text-center">
@@ -95,7 +95,7 @@
     <section id="presenca" class="presenca">
       <div class="container">
           <h2 class="text-center font-3">Confirmar presença</h2>
-          <p class="text-center font-4">Digite o nome completo das pessoas que irão comparecer ao evento</p>
+          <p class="text-center font-4 roxo">Digite o nome completo das pessoas que irão comparecer ao evento</p>
           <div id="rsvpForm" class="d-flex flex-column align-items-center">
               <div id="inputContainer" class="w-50">
                   <div class="input-group mb-3 align-items-center">
@@ -105,7 +105,7 @@
                       <input type="text" id="name1" name="names[]" class="form-control" required>
                   </div>
               </div>
-              <button type="button" id="addNameBtn" class="btn btn-secondary font-4">Adicionar mais um nome</button>
+              <button type="button" id="addNameBtn" class="btn btn-secondary font-4">+ Adicionar mais um nome</button>
               <button type="button" id="abrirModal" class="btn btn-primary botao-enviar mt-3 w-50 font-4">Enviar</button>
           </div>
       </div>
@@ -114,10 +114,7 @@
     <div class="modal" id="confirmaEnvio" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Confirmar presença</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <div class="modal-body">
             <p id="textoNomes"></p>
           </div>
@@ -133,7 +130,8 @@
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
               <div class="modal-body" id="modalBodyMusica">
-                  <p>Presença confirmada! Diz aí uma música que você acha que não pode faltar na nossa festa!</p>
+                  <p>Presença confirmada!</p>
+                  <p>Agora diz aí uma música que você acha que não pode faltar na nossa festa!</p>
 
                   <input type="text" id="inputMusica" name="" class="form-control">
                   <button type="button" id="btnMusica" class="btn btn-primary botao-enviar mt-3 w-100 font-4">Enviar</button>

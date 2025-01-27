@@ -12,6 +12,23 @@
   --ciano: #AEC0D3;
 }
 
+.azul {
+  color: var(--azul)
+}
+
+.roxo {
+  color: var(--roxo) !important;
+}
+
+.btn-secondary {
+  background-color: var(--ciano);
+  border: var(--ciano);
+}
+
+.input-group-text {
+  color: var(--roxo);
+}
+
 /* Reset */
 * {
   scroll-behavior: smooth;
@@ -262,7 +279,7 @@ body {
 
 /* Navbar */
 .navbar-custom {
-  background-color: rgba(192, 192, 192, 0.9);
+  background-color: var(--ciano);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -287,7 +304,7 @@ body {
   font-size: 3.2rem;
   font-weight: bold;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 .navbar-toggler-custom {
   background: none;
@@ -357,15 +374,14 @@ body {
   display: flex;
 }
 .navbar-nav-custom a {
-  text-decoration: none;
-  color: #000;
+  color: #ffffff;
   padding: 0 10px;
+  text-decoration: none;
 }
 .nav-link-custom {
   display: block;
   padding: 10px 0;
   text-decoration: none;
-  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -523,9 +539,24 @@ body {
 }
 
 .presenca .botao-enviar {
-  color: var(--roxo);
-  background: var(--ciano);
-  border: 1px solid var(--ciano);
+  color: #ffffff;
+  background: var(--roxo);
+  border: 1px solid var(--roxo);
+}
+
+#confirmaEnvio .btn-close {
+  right: 4px;
+  position: absolute;
+  top: 4px;
+  z-index: 9999;
+}
+
+#confirmarEnvio .modal-footer {
+  padding: 6px;
+}
+
+#confirmarEnvio .modal-footer .btn {
+  font-size: 12px;
 }
 
 /* Story */
@@ -703,7 +734,7 @@ button {
 footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background-color: var(--azul);
+  background-color: var(--ciano);
   color: white;
   bottom: 0;
 }
