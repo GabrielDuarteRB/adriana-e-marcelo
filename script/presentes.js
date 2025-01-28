@@ -12,11 +12,11 @@ function criandoCardPresente() {
 
     data.forEach(gift => {
       const card = document.createElement('div');
-      card.classList.add('col-md-4', 'mb-4');
+      card.classList.add('mb-4');
 
       card.innerHTML = `
         <div class="card h-100">
-          <div class="card" style="background-image: url('${gift.image}'); background-size: cover; background-position: center; height: 200px; margin: 16px;"></div>
+          <div class="card-image" style="background-image: url('${gift.image}'); background-size: cover; background-position: center; height: 200px; margin: 16px;"></div>
           <div class="card-body d-flex flex-column justify-content-between">
             <h4 class="card-title fw-bold font-1">${gift.title}</h4>
             <p class="card-text font-1">${gift.description}</p>

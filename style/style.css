@@ -729,6 +729,12 @@ button {
   background-color: white;
 }
 
+.gift-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+}
+
 /* Footer */
 footer {
   padding-top: 1.5rem;
@@ -838,6 +844,10 @@ footer {
   .hero .prata {
     margin-top: -84px;
   }
+
+  .gift-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Tablet */
@@ -893,6 +903,10 @@ footer {
 @media (max-width: 767px) {
   .hamburguer {
     display: none;
+  }
+
+  .card-image {
+    height: 180px;
   }
 }
 
@@ -957,6 +971,14 @@ footer {
 
   .hero .prata {
     margin-top: -68px; 
+  }
+
+  .gift-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-image {
+    height: 300px !important;
   }
 }
 
