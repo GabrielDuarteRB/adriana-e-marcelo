@@ -104,7 +104,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "./img/presentes/sabedoria.jpg",
+    "image": "./img/presentes/sabedoria.webp",
     "title": "Caneca da sabedoria com convicção",
     "description": "Se tiver dúvidas, consulte o Marcelo, ele sempre sabe de tudo.",
     "price": "100,00",
@@ -136,7 +136,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/46/0f/65/460f6532a35f66368def2aaf66d69cf4.jpg",
+    "image": "./img/presentes/certificado.jpeg",
     "title": "Certificado de sobrevivência",
     "description": "Um certificado de resistência pelos anos de casamento, assinado pelas filhas.",
     "price": "60,00",
@@ -152,7 +152,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/236x/bd/bb/da/bdbbdaa770e4fd96b556d78051719545.jpg",
+    "image": "./img/presentes/placa.jpg",
     "title": "Placa decorativa de silêncio é sabedoria",
     "description": "Marcelo aprendeu que às vezes é melhor ficar quieto... e viver mais.",
     "price": "80,00",
