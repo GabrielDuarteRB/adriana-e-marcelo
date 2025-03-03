@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://i.pinimg.com/736x/07/90/6d/07906d330c200ec1544c201c71cebdf9.jpg",
+    "image": "./img/presentes/luisa_almoco.png",
     "title": "Almoço para a Luisa",
     "description": "Porque não queremos vê-la estressada.",
     "price": "350,00",
@@ -8,7 +8,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/aa/1e/fd/aa1efd3b72afc6e1adb1c05dcf374bdc.jpg",
+    "image": "./img/presentes/bondinho.jpg",
     "title": "Bondinho",
     "description": "Passeio romântico para o casal.",
     "price": "400,00",
@@ -26,13 +26,13 @@
   {
     "image": "https://i.pinimg.com/736x/52/21/6a/52216aa8be9bc26440e6a1269f25dd5b.jpg",
     "title": "Passeio de helicóptero",
-    "description": "Passeio aéreo romântico pelo Rio de Janeiro.",
+    "description": "Passeio aéreo romântico.",
     "price": "900,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "23456789012 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/c6/9a/d5/c69ad591ac741040934e829682eb7614.jpg",
+    "image": "./img/presentes/alexa.png",
     "title": "Alexa",
     "description": "Para o Marcelo finalmente mandar em alguém.",
     "price": "500,00",
@@ -80,7 +80,7 @@
     "codigo": "56789012345 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/6c/ab/c7/6cabc71e980c331195d372a28fec5e57.jpg",
+    "image": "./img/presentes/barco.jpg",
     "title": "Passeio de barco",
     "description": "Pelo Rio de Janeiro para a família.",
     "price": "850,00",
@@ -120,7 +120,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "https://images.tcdn.com.br/img/img_prod/1083165/sofa_retratil_e_reclinavel_suica_veludo_bege_180cm_5959_3_6e4df71ea653acf1f33912eda56ba77e.png",
+    "image": "./img/presentes/sofa.png",
     "title": "Uma viagem para o Marcelo... pro sofá",
     "description": "Um convite para o Marcelo aproveitar a solidão depois de algum comentário inconveniente.",
     "price": "250,00",
@@ -128,7 +128,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/9f/18/3d/9f183dcde4305cf29176dac0eea3d2e1.jpg",
+    "image": "./img/presentes/album.png",
     "title": "Álbum de fotos das Bodas",
     "description": "Para eternizar as memórias desse dia.",
     "price": "750,00",
