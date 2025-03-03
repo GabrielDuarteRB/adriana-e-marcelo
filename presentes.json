@@ -105,7 +105,7 @@
   },
   {
     "image": "./img/presentes/sabedoria.webp",
-    "title": "Caneca da sabedoria com convicção",
+    "title": "Caneca",
     "description": "Se tiver dúvidas, consulte o Marcelo, ele sempre sabe de tudo.",
     "price": "100,00",
     "qrCode": "fake_qrcode.jpg",
@@ -120,7 +120,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/bc/6b/f0/bc6bf057ccd1725de6cd4234236797e4.jpg",
+    "image": "https://images.tcdn.com.br/img/img_prod/1083165/sofa_retratil_e_reclinavel_suica_veludo_bege_180cm_5959_3_6e4df71ea653acf1f33912eda56ba77e.png",
     "title": "Uma viagem para o Marcelo... pro sofá",
     "description": "Um convite para o Marcelo aproveitar a solidão depois de algum comentário inconveniente.",
     "price": "250,00",
@@ -153,7 +153,7 @@
   },
   {
     "image": "./img/presentes/placa.jpg",
-    "title": "Placa decorativa de silêncio é sabedoria",
+    "title": "Placa decorativa",
     "description": "Marcelo aprendeu que às vezes é melhor ficar quieto... e viver mais.",
     "price": "80,00",
     "qrCode": "fake_qrcode.jpg",

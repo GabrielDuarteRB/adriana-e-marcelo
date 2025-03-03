@@ -69,7 +69,7 @@ function confirmarPresenca(e) {
     input.type = "text";
     input.className = "form-control";
     input.name = `${forName}[]`;
-    input.placeholder = `Nome:`;
+    input.placeholder = `Nome completo:`;
 
     div.appendChild(input);
 
