@@ -45,6 +45,10 @@ body {
   /* min-height: 4000px; */
 }
 
+ul {
+  padding-left: 0rem;
+}
+
 /* Hero */
 /* .hero::before {
   content: "";
@@ -291,6 +295,9 @@ body {
 
 .close-navbar {
   color: black;
+  position: absolute;
+  right: 4px;
+  top: 0;
 }
 
 .container-custom {
@@ -354,8 +361,9 @@ body {
   right: 0;
 }
 .offcanvas-header-custom {
+  background-color: #f5f5f5;
   display: flex;
-  justify-content: flex-end;
+  height: 124px;
   padding: 10px;
 }
 .btn-close-custom {
@@ -366,6 +374,11 @@ body {
 }
 .offcanvas-body-custom {
   padding: 20px;
+}
+.offcanvas-header-custom-text {
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: bold;
 }
 .navbar-nav-custom {
   list-style-type: none;
