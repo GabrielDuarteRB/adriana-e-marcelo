@@ -7,10 +7,10 @@ const adultSection = document.getElementById("adultSectionNames");
 const kidsSection = document.getElementById("KidSectionNames");
 const qntdKid = document.getElementById("qntd-kid");
 const qntdAdult = document.getElementById("qntd-adult");
+const quantityAdultInput = document.getElementById("quantity-adult");
+const quantityKidsInput = document.getElementById("quantity-kids");
 
 function confirmarPresenca(e) {
-  const quantityAdultInput = document.getElementById("quantity-adult");
-  const quantityKidsInput = document.getElementById("quantity-kids");
 
   function updateNameInputs() {
     const numAdults = parseInt(quantityAdultInput.value) || 0;
@@ -175,8 +175,7 @@ function abrirModalFunction() {
     }
   
     confirmaEnvio.show();
-    
-    // Altera o conteúdo do modal com os nomes formatados
+
     textoNomes.innerHTML = 'Deseja confirmar a presença de ' + formattedNames + '?';
   });
 }
@@ -192,6 +191,8 @@ function attachRemoveEvent(buttonRemove) {
 function limparCampos() {
   adultSection.innerHTML = ''
   kidsSection.innerHTML = ''
+  quantityAdultInput.value  = 0
+  quantityKidsInput.value = 0
 
   qntdKid.classList.add('d-none');
   qntdAdult.classList.add('d-none');
@@ -244,7 +245,7 @@ function rolarTela() {
   document.getElementById('scroll-button').addEventListener('click', function() {
     window.scrollBy({
       top: window.innerHeight,
-      behavior: 'smooth' // Faz a rolagem ser suave
+      behavior: 'smooth'
     });
   });
 }
