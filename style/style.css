@@ -556,6 +556,7 @@ ul {
   color: #ffffff;
   background: var(--ciano);
   border: 1px solid var(--ciano);
+  width: 40%;
 }
 
 #confirmaEnvio .btn-close,
@@ -790,8 +791,6 @@ footer {
 .select-quantity {
   display: flex;
   flex-direction: column;
-  height: 100px;
-  justify-content: space-between;
 }
 
 .card-image {
@@ -923,7 +922,7 @@ footer {
 
   #inputContainer {
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
   }
 
   #inputContainer .col {
