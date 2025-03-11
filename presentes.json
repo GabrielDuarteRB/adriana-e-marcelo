@@ -184,7 +184,7 @@
     "codigo": "90123456789 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/4e/1f/d8/4e1fd874339ad8639e64c591ee319c94.jpg",
+    "image": "./img/presentes/BlackSabbath.jpg",
     "title": "Show de despedida do Black Sabbath",
     "description": "Para o Marcelo ir sozinho e não perturbar.",
     "price": "730,00",
