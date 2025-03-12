@@ -1,5 +1,21 @@
 [
   {
+    "image": "https://i.pinimg.com/736x/08/df/1d/08df1d370f7b79ec454f9fd4f0abd94f.jpg",
+    "title": "Cobertor",
+    "description": "Para a Adriana, pois ela sempre está coberta de razão.",
+    "price": "200,00",
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "45678901234 Codigo ficara aqui"
+  },
+  {
+    "image": "https://i.pinimg.com/236x/2b/fc/9b/2bfc9ba44de65b3ebb574978283aa0b2.jpg",
+    "title": "Mantinha do aconchego",
+    "description": "Para o Marcelo, pois ele é um pobre sofredor.",
+    "price": "150,00",
+    "qrCode": "fake_qrcode.jpg",
+    "codigo": "56789012345 Codigo ficara aqui"
+  },
+  {
     "image": "./img/presentes/luisa_almoco.png",
     "title": "Almoço para a Luisa",
     "description": "Porque não queremos vê-la estressada.",
@@ -40,14 +56,6 @@
     "codigo": "34567890123 Codigo ficara aqui"
   },
   {
-    "image": "https://i.pinimg.com/736x/08/df/1d/08df1d370f7b79ec454f9fd4f0abd94f.jpg",
-    "title": "Cobertor",
-    "description": "Para a Adriana, pois ela sempre está coberta de razão.",
-    "price": "200,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "45678901234 Codigo ficara aqui"
-  },
-  {
     "image": "https://i.pinimg.com/736x/3c/36/30/3c3630c99aadbb1328a752121c106a17.jpg",
     "title": "Viagem para as filhas",
     "description": "Que enchem o saco, deixarem os pais em paz.",
@@ -70,14 +78,6 @@
     "price": "700,00",
     "qrCode": "fake_qrcode.jpg",
     "codigo": "89012345678 Codigo ficara aqui"
-  },
-  {
-    "image": "https://i.pinimg.com/236x/2b/fc/9b/2bfc9ba44de65b3ebb574978283aa0b2.jpg",
-    "title": "Mantinha do aconchego",
-    "description": "Para o Marcelo, pois ele é um pobre sofredor.",
-    "price": "150,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "56789012345 Codigo ficara aqui"
   },
   {
     "image": "./img/presentes/barco.jpg",
