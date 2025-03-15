@@ -4,191 +4,167 @@
     "title": "Cobertor",
     "description": "Para a Adriana, pois ela sempre está coberta de razão.",
     "price": "200,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "45678901234 Codigo ficara aqui"
+    "codigo": "00020126730014BR.GOV.BCB.PIX0114+55219800237640233Bodas de Prata- Adriana e Marcelo5204000053039865406200.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304E724"
   },
   {
     "image": "https://i.pinimg.com/236x/2b/fc/9b/2bfc9ba44de65b3ebb574978283aa0b2.jpg",
     "title": "Mantinha do aconchego",
     "description": "Para o Marcelo, pois ele é um pobre sofredor.",
     "price": "150,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "56789012345 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406150.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304E22A"
   },
   {
     "image": "./img/presentes/luisa_almoco.png",
     "title": "Almoço para a Luisa",
     "description": "Porque não queremos vê-la estressada.",
     "price": "350,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126730014BR.GOV.BCB.PIX0114+55219800237640233Bodas de Prata- Adriana e Marcelo5204000053039865406350.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304CB84"
   },
   {
     "image": "./img/presentes/bondinho.jpg",
     "title": "Bondinho",
     "description": "Passeio romântico para o casal.",
     "price": "400,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "12345678901 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406400.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304FE48"
   },
   {
     "image": "./img/presentes/tapete.jpg",
     "title": "Tapete de porta personalizado",
     "description": "Com uma mensagem para evitar qualquer dúvida sobre a hierarquia da casa.",
     "price": "90,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 520400005303986540590.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304E71E"
   },
   {
     "image": "https://i.pinimg.com/736x/52/21/6a/52216aa8be9bc26440e6a1269f25dd5b.jpg",
     "title": "Passeio de helicóptero",
     "description": "Passeio aéreo romântico.",
     "price": "900,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "23456789012 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406900.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63042B2E"
   },
   {
     "image": "./img/presentes/alexa.png",
     "title": "Alexa",
     "description": "Para o Marcelo finalmente mandar em alguém.",
     "price": "500,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "34567890123 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406500.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63047A68"
   },
   {
     "image": "https://i.pinimg.com/736x/3c/36/30/3c3630c99aadbb1328a752121c106a17.jpg",
     "title": "Viagem para as filhas",
     "description": "Que enchem o saco, deixarem os pais em paz.",
     "price": "1000,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "67890123456 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 52040000530398654071000.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63040B62"
   },
   {
     "image": "https://i.pinimg.com/736x/f8/49/4d/f8494d7a35c50f1c85685ee4fe605402.jpg",
     "title": "Restaurante",
     "description": "Jantar romântico para o casal.",
     "price": "550,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "78901234567 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406550.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304D2E8"
   },
   {
     "image": "https://i.pinimg.com/736x/6d/ca/ed/6dcaedd1f9182452e7433e76c328fd4a.jpg",
     "title": "Aulas de dança de salão",
     "description": "Para o casal não passar mais vergonha.",
     "price": "700,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "89012345678 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406700.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63046209"
   },
   {
     "image": "./img/presentes/barco.jpg",
     "title": "Passeio de barco",
     "description": "Por Búzios para o casal.",
     "price": "850,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406850.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304078E"
   },
   {
     "image": "https://i.pinimg.com/236x/bb/a3/c8/bba3c86f1d2494545d5ea04a5f5219e4.jpg",
     "title": "Aula de culinária para a Adriana",
     "description": "Assim, o Marcelo pode descansar.",
     "price": "450,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406450.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***630456C8"
   },
   {
     "image": "https://i.pinimg.com/236x/3a/31/35/3a3135df403eb169c5053581bc2c4ca6.jpg",
     "title": "Vale compras no shopping",
     "description": "Para as filhas darem aquela relaxada.",
     "price": "800,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406800.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304AF0E"
   },
   {
     "image": "./img/presentes/sabedoria.png",
     "title": "Caneca",
     "description": "Se tiver dúvidas, consulte o Marcelo, ele sempre sabe de tudo.",
     "price": "100,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406100.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63044AAA"
   },
   {
     "image": "https://i.pinimg.com/236x/f4/0c/e3/f40ce3fa537e9eed55d7693c7f54ee2d.jpg",
     "title": "Prêmio de 25 anos de paciência",
     "description": "Totalmente merecido para quem sobreviveu ao casamento.",
     "price": "300,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406300.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***630452CB"
   },
   {
     "image": "./img/presentes/sofa.png",
     "title": "Uma viagem para o Marcelo... pro sofá",
     "description": "Um convite para o Marcelo aproveitar a solidão depois de algum comentário inconveniente.",
     "price": "250,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406250.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63047E6B"
   },
   {
     "image": "./img/presentes/album.png",
     "title": "Álbum de fotos das Bodas",
     "description": "Para eternizar as memórias desse dia.",
     "price": "750,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406750.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304CA89"
   },
   {
     "image": "./img/presentes/certificado.jpeg",
     "title": "Certificado de sobrevivência",
     "description": "Um certificado de resistência pelos anos de casamento, assinado pelas filhas.",
     "price": "60,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 520400005303986540560.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63040EBF"
   },
   {
     "image": "./img/presentes/almofada.jpg",
     "title": "Almofada com desculpa padrão",
     "description": "Para o Marcelo ter sempre uma desculpa pronta ao alcance da mão.",
     "price": "120,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406120.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63040FAA"
   },
   {
     "image": "./img/presentes/placa.jpg",
     "title": "Placa decorativa",
     "description": "Marcelo aprendeu que às vezes é melhor ficar quieto... e viver mais.",
     "price": "80,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 520400005303986540580.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304C59E"
   },
   {
     "image": "https://i.pinimg.com/736x/4e/1f/d8/4e1fd874339ad8639e64c591ee319c94.jpg",
     "title": "Visita ao Cristo Redentor",
     "description": "Passeio turistando pelo Rio de Janeiro.",
     "price": "650,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406650.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63044EA9"
   },
   {
     "image": "./img/presentes/spa.jpg",
     "title": "Dia no spa",
     "description": "Para a mulherada se divertir.",
     "price": "600,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406600.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304E629"
   },
   {
     "image": "./img/presentes/luaDeMel.jpg",
     "title": "Contribuição monetária",
     "description": "Para a segunda lua de mel do casal.",
     "price": "830,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406830.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***6304C88E"
   },
   {
     "image": "./img/presentes/BlackSabbath.jpg",
     "title": "Show de despedida do Black Sabbath",
     "description": "Para o Marcelo ir sozinho e não perturbar.",
     "price": "730,00",
-    "qrCode": "fake_qrcode.jpg",
-    "codigo": "90123456789 Codigo ficara aqui"
+    "codigo": "00020126740014BR.GOV.BCB.PIX0114+55219800237640234Bodas de Prata- Adriana e Marcelo 5204000053039865406730.005802BR5924ADRIANA CARVALHO BARBOSA6014RIO DE JANEIRO62070503***63040589"
   }
 ]

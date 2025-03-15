@@ -44,7 +44,8 @@ function openModal(event) {
 
   qrcodeModal.innerHTML = '';
   const qrImage = document.createElement('img');
-  qrImage.src = '../img/qrCodes/' + gift.qrCode;
+  const numericPrice = parseFloat(gift.price.replace(",", "."));
+  qrImage.src = '../img/qrCodes/qrcode-' + numericPrice + '.png';
   qrImage.alt = 'QR Code';
   qrImage.classList.add('img-fluid');
   qrImage.classList.add('w-50');
@@ -53,10 +54,24 @@ function openModal(event) {
 
   tituloModal.innerHTML = gift.title;
   descricaoModal.innerHTML = gift.description;
-  codigoQrCodeModal.innerHTML = gift.codigo
-  precoModalPresente.innerHTML = "Escaneie o qr code a cima ou copie e cole o código no pix para presentear no valor de <b>R$" + gift.price + "</b>"
+  console.log(codigoQrCodeModal)
+  codigoQrCodeModal.value = gift.codigo
+  precoModalPresente.innerHTML = "Entre no aplicativo do seu banco e escaneie o QR Code ou clique no botão e cole no pix para presentear no valor de <b>R$" + gift.price + "</b>"
 
- 
+}
+
+function copiarQRCode() {
+  const textoParaCopiar = codigoQrCodeModal.value;
+
+  navigator.clipboard.writeText(textoParaCopiar)
+  .then(() => {
+    const toast = new bootstrap.Toast(document.getElementById('toastSucesso'));
+    toast.show();
+  })
+  .catch((err) => {
+    console.error("Erro ao copiar o código:", err);
+    alert("Erro ao copiar o código. Por favor, tente novamente.");
+  });
 }
 
 criandoCardPresente();

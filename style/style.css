@@ -25,6 +25,14 @@
   border: var(--ciano);
 }
 
+.btn-copy {
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  margin: 24px auto;
+  width: 50%;
+}
+
 .input-group-text {
   color: var(--roxo);
 }
@@ -63,6 +71,11 @@ ul {
   background-position: center;
   filter: grayscale();
 } */
+
+.toast {
+  font-size: 18px;
+  z-index: 9999;
+}
 
 .hero {
   display: flex;
@@ -826,6 +839,10 @@ footer {
     font-size: 75%;
   }
 
+  .btn-copy {
+    font-size: 18px;
+  }
+
   .home .heart {
     display: none;
   }
@@ -946,6 +963,10 @@ footer {
   html {
     font-size: 60%;
   }
+  
+  .toast {
+    width: 75%!important;
+  }
 
   .home .heart {
     display: none;
@@ -1018,8 +1039,17 @@ footer {
   }
 }
 
+@media (max-width: 438px) {
+  .btn-copy {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 386px) {
   .hero .noivos {
     font-size: 4rem;
+  }
+  .btn-copy {
+    font-size: 12px;
   }
 }
